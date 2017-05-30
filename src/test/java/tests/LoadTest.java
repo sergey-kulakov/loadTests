@@ -9,8 +9,11 @@ import org.testng.annotations.Test;
 
 import java.util.concurrent.TimeUnit;
 
+import static org.testng.Assert.assertTrue;
+
 public class LoadTest {
     public static WebDriver driver;
+
 
 
 
@@ -34,9 +37,9 @@ public class LoadTest {
         // Получаем Navigation Event Start (начало перехода)
         long navigationStart = (Long) js.executeScript("return window.performance.timing.navigationStart;");
         // Разница между Load Event End и Navigation Event Start - это время загрузки страницы
-        System.out.println("Page Load Time is " + (loadEventEnd - navigationStart)/1000 + " seconds.");
-
-
+        long loadTime = (loadEventEnd - navigationStart) / 1000;
+        System.out.println("Page Load Time is " + loadTime + " seconds.");
+        assertTrue(loadTime < 10);
     }
 
     @AfterTest
