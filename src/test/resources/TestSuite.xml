@@ -1,35 +1,46 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 <suite name="Suite" verbose="1" >
-        <test name="Test lollita demo">
-            <!-- Параметр для ДАННОГО теста -->
-            <parameter name="url" value="http://lolita.demo.gophotoweb.com/"/>
-            <classes>
 
-                <class name="tests.LoadTest"/>
-
-            </classes>
-        </test>
-    <test name="Test lollita demo shop">
+    <test name="Test vigbo">
         <!-- Параметр для ДАННОГО теста -->
-        <parameter name="url" value="http://lolita.demo.gophotoweb.com/shop"/>
+        <parameter name="url" value="https://vigbo.com/"/>
         <classes>
 
             <class name="tests.LoadTest"/>
 
         </classes>
     </test>
-    <test name="Test thor site">
-        <!-- Параметр для ДАННОГО теста -->
-        <parameter name="url" value="http://u3027-35.gophotoweb.com/"/>
-        <classes>
 
-            <class name="tests.LoadTest"/>
-
-        </classes>
-    </test>
     <test name="Test thor shop">
         <!-- Параметр для ДАННОГО теста -->
         <parameter name="url" value="http://u3027-35.gophotoweb.com/shop"/>
+        <classes>
+
+            <class name="tests.LoadTest"/>
+
+        </classes>
+    </test>
+    <test name="Test web01 shop">
+        <!-- Параметр для ДАННОГО теста -->
+        <parameter name="url" value="http://u9200-46.web01.vigbo.com/shop"/>
+        <classes>
+
+            <class name="tests.LoadTest"/>
+
+        </classes>
+    </test>
+    <test name="Test web02 shop">
+        <!-- Параметр для ДАННОГО теста -->
+        <parameter name="url" value="http://u20159-35.web02.vigbo.com/shop"/>
+        <classes>
+
+            <class name="tests.LoadTest"/>
+
+        </classes>
+    </test>
+    <test name="Test web03 shop">
+        <!-- Параметр для ДАННОГО теста -->
+        <parameter name="url" value="http://u28420.web03.vigbo.com/shop"/>
         <classes>
 
             <class name="tests.LoadTest"/>
